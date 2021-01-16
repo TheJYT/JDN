@@ -5,9 +5,9 @@ const http = require('http');
 const https = require('https');
 
 // Certificate
-const privateKey = fs.readFileSync('/etc/letsencrypt/live/cdn.thejyt.xyz/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('/etc/letsencrypt/live/cdn.thejyt.xyz/cert.pem', 'utf8');
-const ca = fs.readFileSync('/etc/letsencrypt/live/cdn.thejyt.xyz/chain.pem', 'utf8');
+const privateKey = fs.readFileSync('/etc/letsencrypt/live/your.domain.com/privkey.pem', 'utf8');
+const certificate = fs.readFileSync('/etc/letsencrypt/live/your.domain.com/cert.pem', 'utf8');
+const ca = fs.readFileSync('/etc/letsencrypt/live/your.domain.com/chain.pem', 'utf8');
 
 const credentials = {
 	key: privateKey,
